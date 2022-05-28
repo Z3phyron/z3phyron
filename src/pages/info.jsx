@@ -1,4 +1,4 @@
-import image1 from "../images/Rectangle 4.png"
+import image1 from "../images/Desktop - 1.png"
 
 
 export const projects = [
