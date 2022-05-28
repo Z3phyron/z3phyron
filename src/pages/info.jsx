@@ -1,4 +1,6 @@
 import image1 from "../images/Desktop - 1.png"
+import image2 from "../images/Desktop - 2.png"
+import image3 from "../images/Desktop - 3.png"
 
 
 export const projects = [
@@ -28,13 +30,13 @@ export const projects = [
     title: "Not3z",
     desc: "A marketing platform that connects farmers to customers across various locations, be it state, region, country or continent.",
     link: "https://not3z.vercel.app/",
-    image: image1,
+    image: image3,
   },
   {
     id: 5,
     title: "DSecrets",
     desc: "A marketing platform that connects farmers to customers across various locations, be it state, region, country or continent.",
     link: "https://anonymous-sigma.vercel.app/",
-    image: image1,
+    image: image2,
   },
 ];
