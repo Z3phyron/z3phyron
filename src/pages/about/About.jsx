@@ -8,8 +8,35 @@ const About = () => {
   return (
     <LayOut>
       <Header exit="exit" variants={title} initial="hidden" animate="show">
-        About me
+        _About me ( )
       </Header>
+      <Desc exit="exit" variants={title} initial="hidden" animate="show">
+        <p>
+          A Front End Web Developer based in Lagos, Nigeria. I have over two
+          year of experience in writing maintainable and functional code,
+          following best practices, and building websites. 
+        </p>
+        <p>
+          I'm a software Engineering student at NIIT, where I plan on studying
+          more to help build my career. Adept knowledge in building robust
+          RESTful APIs, dashboards, API Integrations. I value teamwork and
+          respect everyone’s opinion.
+        </p>
+      </Desc>
+      <Skills>
+        <h3 className="header">SKills</h3>
+        <div className="skillset">
+          <div>python</div>
+          <div>ReactJs</div>
+          <div>Javascript</div>
+          <div>NextJs</div>
+          <div>Java</div>
+          <div>NodeJs</div>
+          <div>TypeScript</div>
+          <div>SQL</div>
+          <div>WordPress</div>
+        </div>
+      </Skills>
     </LayOut>
   );
 };
@@ -19,52 +46,28 @@ const Header = styled(motion.div)`
   font-size: 30px;
   margin-bottom: 20px;
 `;
-const Greeting = styled.div`
+const Skills = styled(motion.div)`
   color: var(--white);
-  padding-top: 50px;
+ 
+  margin-top: 10vh;
 
-  h2 {
-    font-size: 50px;
-    margin-bottom: 20px;
+  .header {
+     font-size: 30px;
+     margin-bottom: 25px;
+  }
+
+  .skillset {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
   }
 `;
+
 const Desc = styled.div`
   color: var(--white);
-  /* 
-  button {
-    padding: 10px 17px;
-    margin-top: 20px;
-    outline: none;
-    border: none;
-    border-radius: 4px;
-    background: var(--green);
-    color: var(--white);
-    font-size: 20px;
-    position: relative;
-    z-index: 999;
-    transition: 0.5s;
-
-    &::after {
-      content: "";
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      border-radius: 4px;
-      top: -10px;
-      right: -10px;
-      border: 2px solid var(--green);
-      z-index: 5;
-      transition: 0.5s;
-    }
-
-    &:hover {
-      &::after {
-        top: -2px;
-        right: -2px;
-        border-radius: 6px;
-      }
-    }
-  } */
-`;
+  p {
+    margin-bottom: 20px;
+  }`;
 
 export default About;

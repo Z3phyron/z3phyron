@@ -44,11 +44,10 @@ export const hello = {
     },
     exit: {
         opacity: 0,
-        x: -300,
+        // x: -300,
         transition: {
-            duration: 0.3,
-            delay: 0.1,
-            staggerChildren: 0.5
+            duration: 0.1,
+            delay: 0.01,
         }
     } 
 }
@@ -70,10 +69,10 @@ export const name = {
           },
   exit: {
     opacity: 0,
-    x: -300,
+    // x: -300,
     transition: {
-      duration: 0.3,
-      delay: 0.55,
+      duration: 0.1,
+      delay: 0.05,
       staggerChildren: 0.5,
     },
   },
@@ -96,10 +95,10 @@ export const prof = {
   },
   exit: {
     opacity: 0,
-    x: -300,
+    // x: -300,
     transition: {
-      duration: 0.3,
-      delay: 1.3,
+      duration: 0.1,
+      delay: 0.3,
       staggerChildren: 0.5,
     },
   },
@@ -122,10 +121,10 @@ export const home_desc = {
   },
   exit: {
     opacity: 0,
-    x: -300,
+    // x: -300,
     transition: {
-      duration: 0.3,
-      delay: 1.8,
+      duration: 0.1,
+      delay: 0.8,
       staggerChildren: 0.5,
     },
   },
@@ -148,10 +147,10 @@ export const home_btn = {
   },
   exit: {
     opacity: 0,
-    x: -300,
+    // x: -300,
     transition: {
-      duration: 0.3,
-      delay: 1.8,
+      duration: 0.1,
+      delay: 0.8,
       staggerChildren: 0.5,
     },
   },
