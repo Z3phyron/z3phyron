@@ -4,20 +4,14 @@ import LayOut from "../../components/LayOut";
 import { motion } from "framer-motion";
 import { title } from "../../components/Anime";
 
-
 const Contact = () => {
-
-
   return (
     <LayOut>
       <Header exit="exit" variants={title} initial="hidden" animate="show">
         Contact me
       </Header>
-    
-      <Desc>
-        
-             </Desc>
 
+      <Desc></Desc>
     </LayOut>
   );
 };
@@ -30,9 +24,6 @@ const Header = styled(motion.div)`
 
 const Desc = styled.div`
   color: var(--white);
-
-
-
 `;
 
 export default Contact;
