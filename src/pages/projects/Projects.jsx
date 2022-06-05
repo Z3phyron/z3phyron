@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { RiLightbulbFlashFill } from "react-icons/ri";
+import { Link } from "react-router-dom";
 import LayOut from "../../components/LayOut";
 import { projects } from "../info";
 import { motion } from "framer-motion";
@@ -47,7 +48,9 @@ const Projects = () => {
                 >
                   <h2 className="title">{proj.title}</h2>
                   <p className="desc">{proj.desc}</p>
-                  <button>View Project</button>
+                  <a href={proj.link}>
+                    <button>View Project</button>
+                  </a>
                 </Details>
                 <Image
                   initial={{
@@ -122,7 +125,6 @@ const Proj = styled(motion.div)`
   @media (max-width: 820px) {
     flex-direction: column-reverse;
     &.reverse {
-    
       flex-direction: column-reverse;
     }
   }
@@ -142,7 +144,7 @@ const Details = styled(motion.div)`
     word-spacing: 1px;
   }
   @media (max-width: 820px) {
-   width: 100%;
+    width: 100%;
   }
 `;
 const Image = styled(motion.div)`
