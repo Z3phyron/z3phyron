@@ -11,7 +11,10 @@ const Contact = () => {
         Contact me
       </Header>
 
-      <Desc></Desc>
+      <Desc>
+        
+
+      </Desc>
     </LayOut>
   );
 };

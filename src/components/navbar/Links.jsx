@@ -19,8 +19,5 @@ export const links = [
     icon: <FaEnvelope />,
     path: "/contact",
   },
-  {
-    icon: <FaHome />,
-    path: "/",
-  },
+
 ];

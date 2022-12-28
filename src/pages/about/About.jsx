@@ -14,7 +14,7 @@ const About = () => {
         <p>
           A Front End Web Developer based in Lagos, Nigeria. I have over two
           year of experience in writing maintainable and functional code,
-          following best practices, and building websites. 
+          following best practices, and building websites.
         </p>
         <p>
           I'm a software Engineering student at NIIT, where I plan on studying
@@ -28,12 +28,16 @@ const About = () => {
         <div className="skillset">
           <div>python</div>
           <div>ReactJs</div>
-          <div>Javascript</div>
+          <div>
+            
+            <strong>State Management:</strong> Redux
+          </div>
           <div>NextJs</div>
           <div>Java</div>
           <div>NodeJs</div>
           <div>TypeScript</div>
           <div>SQL</div>
+          <div>Graphql </div>
           <div>WordPress</div>
         </div>
       </Skills>
@@ -48,12 +52,12 @@ const Header = styled(motion.div)`
 `;
 const Skills = styled(motion.div)`
   color: var(--white);
- 
+
   margin-top: 10vh;
 
   .header {
-     font-size: 30px;
-     margin-bottom: 25px;
+    font-size: 30px;
+    margin-bottom: 25px;
   }
 
   .skillset {
@@ -68,6 +72,7 @@ const Desc = styled.div`
   color: var(--white);
   p {
     margin-bottom: 20px;
-  }`;
+  }
+`;
 
 export default About;
